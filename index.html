@@ -1070,6 +1070,41 @@
         }
 
         @media (max-width: 768px) {
+            /* Nav Bar tweaks */
+            nav {
+                padding: 0 16px;
+            }
+            .nav-brand {
+                gap: 8px;
+            }
+            .nav-by {
+                display: none; /* Hide tagline on mobile to avoid layout wrapping */
+            }
+            .nav-brand img {
+                height: 36px; /* slightly smaller logo on mobile header */
+            }
+            .nav-product {
+                font-size: 18px;
+            }
+            .nav-cta {
+                padding: 6px 12px;
+                font-size: 11px;
+            }
+
+            /* Hero 1 adjustments */
+            .hero1-h1 {
+                font-size: clamp(32px, 8vw, 52px);
+            }
+            .hero1-stats .stat-pill {
+                min-width: 140px;
+                font-size: 11px;
+                padding: 8px 12px;
+            }
+            .hero1-stats .stat-pill .snum {
+                font-size: 16px;
+            }
+
+            /* Press Content Box adjustments */
             .press-flag-inner {
                 padding: 10px 20px;
                 flex-direction: column;
@@ -1078,19 +1113,33 @@
             }
 
             .press-body-wrap {
-                padding: 24px 20px 0;
+                padding: 24px 16px 0;
+            }
+
+            .press-divergence {
+                padding: 18px;
+                margin-bottom: 24px;
+            }
+
+            .press-blockchart svg {
+                min-width: 650px; /* Forces horizontal scroll on mobile so texts remain readable */
             }
 
             .press-lead {
                 border-right: none;
+                border-bottom: 1px solid rgba(196, 98, 45, 0.4);
+            }
+            .press-lead:last-child {
+                border-bottom: none;
             }
 
             .press-soundbites {
                 padding: 24px 20px;
             }
 
+            /* CTA Section adjustments */
             #cta {
-                padding: 80px 24px;
+                padding: 60px 20px;
             }
 
             #hero-2 {
@@ -1098,7 +1147,22 @@
             }
 
             #cta h2 {
-                font-size: clamp(34px, 8vw, 56px);
+                font-size: clamp(28px, 8vw, 48px);
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+                max-width: 320px;
+                margin: 0 auto 32px;
+                gap: 12px;
+            }
+
+            .cta-btn-primary, .cta-btn-ghost {
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                box-sizing: border-box;
             }
         }
 
