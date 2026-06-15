@@ -206,23 +206,27 @@
 
         .hero-label {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 11px;
-            letter-spacing: 0.2em;
+            font-size: 10.5px;
+            letter-spacing: 0.15em;
             color: #025b5f;
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
             margin-bottom: 28px;
-            display: flex;
+            display: inline-flex;
             align-items: center;
-            gap: 14px;
+            gap: 8px;
+            background: rgba(2, 91, 95, 0.08);
+            border: 1px solid rgba(2, 91, 95, 0.18);
+            padding: 6px 16px;
+            border-radius: 20px;
         }
 
-        .hero-label::before {
-            content: '';
-            display: block;
-            width: 36px;
-            height: 1px;
+        .hero-label-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
             background: #025b5f;
+            flex-shrink: 0;
         }
 
         .hero1-h1 {
@@ -1333,7 +1337,7 @@
             <div class="hero1-grid">
                 <!-- Left column: Headline and description -->
                 <div class="hero1-left">
-                    <div class="hero-label reveal">Climate Intelligence Platform</div>
+                    <div class="hero-label reveal"><span class="hero-label-dot"></span>CLIMATE HAZARD INTELLIGENCE PLATFORM</div>
 
                     <h1 class="hero1-h1 reveal" style="transition-delay:.08s">
                         Every district.<br>
